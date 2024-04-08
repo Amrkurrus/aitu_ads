@@ -1,4 +1,4 @@
-# ADS Java Laboratory №1
+# Algorithms and Data Structures | Laboratory №1
 ---
 ### This Java program contains 11 methods for 10 problems that demonstrate the usage of recursion.
 
