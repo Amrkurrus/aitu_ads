@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class Main {
                 break;
             case 2:
                 p2();
+                break;
+            case 3:
+                p3();
                 break;
             default:
                 System.out.println("there is no problem: " + tn);
@@ -27,12 +31,8 @@ public class Main {
         System.out.println(p1r(n, nArr, index, min));
     }
     public static int p1r(int n, int[] arr, int index, int min) {
-        if (arr[index] < min) {
-            min = arr[index];
-        }
-        if (index == n - 1) {
-            return min;
-        }
+        if (arr[index] < min) min = arr[index];
+        if (index == n - 1) return min;
         return p1r(n, arr, index + 1, min);
     }
     public static void p2() {
@@ -46,12 +46,20 @@ public class Main {
         int sum = 0;
         System.out.println(p2r(n, nArr, index, sum));
     }
-
     public static double p2r(int n, int[] arr, int index, int sum) {
         sum = sum + arr[index];
-        if (index == n - 1) {
-            return (double) sum / (double) n;
-        }
+        if (index == n - 1) return (double) sum / (double) n;
         return p2r(n, arr, index + 1, sum);
+    }
+    public static void p3() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int index = 2;
+        System.out.println(p3r(n, index));
+    }
+    public static String p3r(int n, int index){
+        if (index == n || n == 1) return "Prime";
+        if (n % index == 0) return "Composite";
+        return p3r(n, index+1);
     }
 }

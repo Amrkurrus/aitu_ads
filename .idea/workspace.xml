@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="Gitignore update,&#10;problem 1 bugfix,&#10;problem 2 solved.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="problem 3 solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -65,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712291818843</updated>
       <workItem from="1712291820017" duration="762000" />
-      <workItem from="1712586622353" duration="1837000" />
+      <workItem from="1712586622353" duration="3200000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -83,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712588426377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Gitignore update,&#10;problem 1 bugfix,&#10;problem 2 solved.">
+      <option name="closed" value="true" />
+      <created>1712588517906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712588517906</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Problem selector was added; problem 1 was solved." />
     <MESSAGE value="Gitignore update,&#10;problem 1 bugfix,&#10;problem 2 solved." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gitignore update,&#10;problem 1 bugfix,&#10;problem 2 solved." />
+    <MESSAGE value="problem 3 solved." />
+    <option name="LAST_COMMIT_MESSAGE" value="problem 3 solved." />
   </component>
 </project>
