@@ -22,6 +22,9 @@ public class Main {
             case 5:
                 p5();
                 break;
+            case 6:
+                p6();
+                break;
             default:
                 System.out.println("There is no problem: " + tn);
         }
@@ -92,9 +95,23 @@ public class Main {
         int n = sc.nextInt();
         System.out.println(p5r(n));
     }
+
     public static int p5r(int n) {
         if (n == 0) return 0;
         if (n == 1) return 1;
-        return p5r(n-1) + p5r(n-2);
+        return p5r(n - 1) + p5r(n - 2);
+    }
+
+    public static void p6() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int n = sc.nextInt();
+        int index = 0;
+        System.out.println(p6r(a, n, index));
+    }
+
+    public static int p6r(int a, int n, int index) {
+        if (index == n) return 1;
+        return a * p6r(a, n, index + 1);
     }
 }
