@@ -31,6 +31,9 @@ public class Main {
             case 8:
                 p8();
                 break;
+            case 9:
+                p9();
+                break;
             default:
                 System.out.println("There is no problem: " + tn);
         }
@@ -145,5 +148,17 @@ public class Main {
         if (Character.isDigit(arr[index])) return "No";
         if (index + 1 == len) return "Yes";
         return p8r(arr, index + 1, len);
+    }
+
+    public static void p9() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        System.out.println(p9r(n, k));
+    }
+
+    public static int p9r(int n, int k) {
+        if (n == k || k == 0) return 1;
+        return p9r(n - 1, k - 1) + p9r(n - 1, k);
     }
 }
