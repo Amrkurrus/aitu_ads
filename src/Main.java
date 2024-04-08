@@ -266,7 +266,7 @@ public class Main {
      * Problem 10
      * This method calculates the GCD of given number.
      * It uses a recursive approach.
-     * Time complexity: O(n), where n is the input number.
+     * Time complexity: O(log(n), where n is the input number.
      * The recursive algorithm iterates through all number from n to 1,
      * @param a and b that is numbers between is needed to find GCD.
      * @return The GCD itself.
