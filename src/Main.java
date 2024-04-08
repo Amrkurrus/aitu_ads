@@ -1,14 +1,3 @@
-/*
- * This method calculates the factorial of given number.
- * It uses a recursive approach.
- * Time complexity: O(n), where n is the input number.
- * The recursive algorithm iterates through all number from n to 1,
- * resulting in linear time complexity.
- *
- * @param n the number for which the factorial is to be calculated.
- * @return The factorial of the given number.
- */
-
 import java.util.Scanner;
 
 public class Main {
