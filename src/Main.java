@@ -28,6 +28,9 @@ public class Main {
             case 7:
                 p7();
                 break;
+            case 8:
+                p8();
+                break;
             default:
                 System.out.println("There is no problem: " + tn);
         }
@@ -114,7 +117,7 @@ public class Main {
 
     public static int p6r(int a, int n) {
         if (n == 0) return 1;
-        return a * p6r(a, n-1);
+        return a * p6r(a, n - 1);
     }
 
     public static void p7() {
@@ -127,5 +130,20 @@ public class Main {
         int a = sc.nextInt();
         if (n == 1) return " " + a;
         return p7r(n - 1, sc) + " " + a;
+    }
+
+    public static void p8() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int len = s.length();
+        int index = 0;
+        char[] sArr = s.toCharArray();
+        System.out.println(p8r(sArr, index, len));
+    }
+
+    public static String p8r(char[] arr, int index, int len) {
+        if (Character.isDigit(arr[index])) return "No";
+        if (index + 1 == len) return "Yes";
+        return p8r(arr, index + 1, len);
     }
 }
