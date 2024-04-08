@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number № of problem: ");
+        System.out.println("Enter № (number) of problem: ");
         int tn = sc.nextInt();
         switch (tn) {
             case 1:
@@ -15,8 +15,11 @@ public class Main {
             case 3:
                 p3();
                 break;
+            case 4:
+                p4();
+                break;
             default:
-                System.out.println("there is no problem: " + tn);
+                System.out.println("There is no problem: " + tn);
         }
     }
     public static void p1() {
@@ -61,5 +64,14 @@ public class Main {
         if (index == n || n == 1) return "Prime";
         if (n % index == 0) return "Composite";
         return p3r(n, index+1);
+    }
+    public static void p4() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(p4r(n));
+    }
+    public static int p4r(int n) {
+        if (n == 1) return 1;
+        return n * p4r(n-1);
     }
 }
