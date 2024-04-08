@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="problem 8 solved.">
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="problem 9 solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -64,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712291818843</updated>
       <workItem from="1712291820017" duration="762000" />
-      <workItem from="1712586622353" duration="8553000" />
+      <workItem from="1712586622353" duration="11948000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -138,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712594670615</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="problem 9 solved.">
+      <option name="closed" value="true" />
+      <created>1712595323479</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712595323479</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +173,7 @@
     <MESSAGE value="Problem 6 solved." />
     <MESSAGE value="Problem 7 solved, problem 6: removed redundant variable." />
     <MESSAGE value="problem 8 solved." />
-    <option name="LAST_COMMIT_MESSAGE" value="problem 8 solved." />
+    <MESSAGE value="problem 9 solved." />
+    <option name="LAST_COMMIT_MESSAGE" value="problem 9 solved." />
   </component>
 </project>
