@@ -3,7 +3,7 @@
 ### This Java program contains 11 methods for 10 problems that demonstrate the usage of recursion.
 
 ## Main
-### In main there is a problem selector that takes number from 1 to 10 that represent number of problem.
+### In `main` method there is a problem selector that takes number from 1 to 10 that represent number of problem.
 ---
 ## Methods:
 
