@@ -117,8 +117,8 @@ public class Main {
     }
     /*Recursive part*/
     public static String p3r(int n, int index) {
-        if (index == n || n == 1) return "Prime";
-        if (n % index == 0) return "Composite";
+        if (index == n) return "Prime";
+        if (n % index == 0 || n == 1) return "Composite";
         return p3r(n, index + 1);
     }
 
