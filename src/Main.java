@@ -12,38 +12,54 @@ public class Main {
         int tn = sc.nextInt();
         switch (tn) {
             case 1:
-                p1();
+                workTime(Main::p1);
                 break;
             case 2:
-                p2();
+                workTime(Main::p2);
                 break;
             case 3:
-                p3();
+                workTime(Main::p3);
                 break;
             case 4:
-                p4();
+                workTime(Main::p4);
                 break;
             case 5:
-                p5();
+                workTime(Main::p5);
                 break;
             case 6:
-                p6();
+                workTime(Main::p6);
                 break;
             case 7:
-                p7();
+                workTime(Main::p7);
                 break;
             case 8:
-                p8();
+                workTime(Main::p8);
                 break;
             case 9:
-                p9();
+                workTime(Main::p9);
                 break;
             case 10:
-                p10();
+                workTime(Main::p10);
                 break;
             default:
                 System.out.println("There is no problem: " + tn);
         }
+    }
+
+    /*
+     * This workTime method used record execute time of program.
+     * @param the name of problem method.
+     * @return time of execution.
+     */
+    public static void workTime(Runnable problem) {
+        long startTime = System.nanoTime();
+        problem.run();
+        long endTime = System.nanoTime();
+
+        long totalTimeNanos = endTime - startTime;
+        double totalTimeSeconds = totalTimeNanos / 1000000000.0;
+
+        System.out.println("Execution time: " + totalTimeSeconds + " seconds.");
     }
 
     /*
@@ -66,7 +82,8 @@ public class Main {
         int min = 999999;
         System.out.println(p1r(n, nArr, index, min));
     }
-/*Recursive part*/
+
+    /*Recursive part*/
     public static int p1r(int n, int[] arr, int index, int min) {
         if (arr[index] < min) min = arr[index];
         if (index == n - 1) return min;
@@ -93,6 +110,7 @@ public class Main {
         int sum = 0;
         System.out.println(p2r(n, nArr, index, sum));
     }
+
     /*Recursive part*/
     public static double p2r(int n, int[] arr, int index, int sum) {
         sum = sum + arr[index];
@@ -115,6 +133,7 @@ public class Main {
         int index = 2;
         System.out.println(p3r(n, index));
     }
+
     /*Recursive part*/
     public static String p3r(int n, int index) {
         if (index == n) return "Prime";
@@ -137,6 +156,7 @@ public class Main {
         int n = sc.nextInt();
         System.out.println(p4r(n));
     }
+
     /*Recursive part*/
     public static int p4r(int n) {
         if (n == 1) return 1;
@@ -145,7 +165,7 @@ public class Main {
 
     /*
      * Problem 5
-     * This method find n'th fibonacci number.
+     * This method find nth fibonacci number.
      * It uses a recursive approach.
      * Time complexity: O(2^n), where n is the input number.
      * The recursive algorithm iterates through all number from n to 0,
@@ -157,6 +177,7 @@ public class Main {
         int n = sc.nextInt();
         System.out.println(p5r(n));
     }
+
     /*Recursive part*/
     public static int p5r(int n) {
         if (n == 0) return 0;
@@ -179,6 +200,7 @@ public class Main {
         int n = sc.nextInt();
         System.out.println(p6r(a, n));
     }
+
     /*Recursive part*/
     public static int p6r(int a, int n) {
         if (n == 0) return 1;
@@ -191,7 +213,7 @@ public class Main {
      * It uses a recursive approach.
      * Time complexity: O(n), where n is the input number.
      * The recursive algorithm iterates through all number from n to 1,
-     * @param n length of array, a array elements.
+     * @param n length of array, 'a' array elements.
      * @return Reversed array.
      */
     public static void p7() {
@@ -199,6 +221,7 @@ public class Main {
         int n = sc.nextInt();
         System.out.println(p7r(n, sc));
     }
+
     /*Recursive part*/
     public static String p7r(int n, Scanner sc) {
         int a = sc.nextInt();
@@ -223,6 +246,7 @@ public class Main {
         char[] sArr = s.toCharArray();
         System.out.println(p8r(sArr, index, len));
     }
+
     /*Recursive part*/
     public static String p8r(char[] arr, int index, int len) {
         if (Character.isDigit(arr[index])) return "No";
@@ -245,6 +269,7 @@ public class Main {
         int k = sc.nextInt();
         System.out.println(p9r(n, k));
     }
+
     /*Recursive part*/
     public static int p9r(int n, int k) {
         if (n == k || k == 0) return 1;
@@ -266,6 +291,7 @@ public class Main {
         int b = sc.nextInt();
         System.out.println(p10r(a, b));
     }
+
     /*Recursive part*/
     public static int p10r(int a, int b) {
         if (b == 0) return a;
