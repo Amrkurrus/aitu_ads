@@ -40,6 +40,8 @@ public class Main {
                 break;
             case 10:
                 workTime(Main::p10);
+            case 11:
+                workTime(Main::p11);
                 break;
             default:
                 System.out.println("There is no problem: " + tn);
@@ -296,5 +298,27 @@ public class Main {
     public static int p10r(int a, int b) {
         if (b == 0) return a;
         return p10r(b, a % b);
+    }
+
+    public static void p11() {
+        Scanner sc = new Scanner(System.in);
+        String chr = sc.nextLine();
+        String s = sc.nextLine();
+        int len = s.length();
+        int index = 0;
+        int counter = 0;
+        char[] chrArr = chr.toCharArray();
+        char[] sArr = s.toCharArray();
+        System.out.println(p11r(len, index, counter, sArr, chrArr));
+    }
+
+    public static int p11r(int len, int index, int counter, char[] sArr, char[] chrArr) {
+        if (index == len) {
+            return counter;
+        }
+        if (sArr[index] == chrArr[0]) {
+            counter++;
+        }
+        return p11r(len, index+1, counter, sArr, chrArr);
     }
 }
