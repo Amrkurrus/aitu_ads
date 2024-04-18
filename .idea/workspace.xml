@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="MyArrayList is done">
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="All my Array list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
       <workItem from="1713245053607" duration="895000" />
       <workItem from="1713445816575" duration="759000" />
       <workItem from="1713454702033" duration="1699000" />
-      <workItem from="1713456509610" duration="6378000" />
+      <workItem from="1713456509610" duration="9646000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -232,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713462480544</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="All my Array list">
+      <option name="closed" value="true" />
+      <created>1713463090022</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713463090022</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +274,7 @@
     <MESSAGE value="Time update." />
     <MESSAGE value="defence commit" />
     <MESSAGE value="MyArrayList is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyArrayList is done" />
+    <MESSAGE value="All my Array list" />
+    <option name="LAST_COMMIT_MESSAGE" value="All my Array list" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 import models.MyArrayList;
+import models.MyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +25,25 @@ public class Main {
         mal.toArray();
         mal.clear();
 
-        System.out.println();
+        System.out.println("Example of work myLinkedList.java: ");
+        MyLinkedList<Integer> mll =new MyLinkedList<>();
+        mll.addFirst(1);
+        mll.add(1,2);
+        mll.addLast(4);
+        mll.add(5);
+        System.out.println(mll.size());
+        mll.printArr();
+        mll.set(2, 3);
+        System.out.println(mll.get(2));
+        System.out.println(mll.getFirst() + " " + mll.getLast());
+        mll.remove(1);
+        mll.removeFirst();
+        mll.removeFirst();
+        System.out.println(mll.lastIndexOf(2));
+        System.out.println(mll.indexOf(1));
+        mll.printArr();
+        System.out.println(mll.exists(5));
+        mll.toArray();
+        mll.clear();
     }
 }
