@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="defence commit">
-      <change afterPath="$PROJECT_DIR$/src/models/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="MyArrayList is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laboratory 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS_assignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +94,7 @@
       <workItem from="1713245053607" duration="895000" />
       <workItem from="1713445816575" duration="759000" />
       <workItem from="1713454702033" duration="1699000" />
-      <workItem from="1713456509610" duration="5608000" />
+      <workItem from="1713456509610" duration="6378000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -229,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712896018942</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="MyArrayList is done">
+      <option name="closed" value="true" />
+      <created>1713462480544</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713462480544</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +265,7 @@
     <MESSAGE value="problem 3 bugfix." />
     <MESSAGE value="Time update." />
     <MESSAGE value="defence commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="defence commit" />
+    <MESSAGE value="MyArrayList is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyArrayList is done" />
   </component>
 </project>

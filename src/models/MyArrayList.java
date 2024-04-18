@@ -132,7 +132,7 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public Object[] toArray() {
-        T[] newArray = (T[]) new Object[5];
+        T[] newArray = (T[]) new Object[size];
         for (int i = 0; i < size; i++) {
             newArray[i] = arr[i];
         }
