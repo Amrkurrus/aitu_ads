@@ -3,15 +3,18 @@ package models;
 import java.util.Iterator;
 
 public class MyLinkedList<T> implements MyList<T> {
+    // Fields to maintain the head, tail, and size of the linked list
     private MyNode<T> head;
     private MyNode<T> tail;
     private int size;
 
+    // Method to add an item to the end of the linked list
     @Override
     public void add(T item) {
         addLast(item);
     }
 
+    // Method to set the value of an item at a specific index in the linked list
     @Override
     public void set(int index, T item) {
         checkIndex(index);
@@ -22,6 +25,7 @@ public class MyLinkedList<T> implements MyList<T> {
         node.setValue(item);
     }
 
+    // Method to add an item at a specific index in the linked list
     @Override
     public void add(int index, T item) {
         if (index == 0) {
@@ -29,6 +33,7 @@ public class MyLinkedList<T> implements MyList<T> {
         } else if (index == size) {
             addLast(item);
         } else {
+            // Inserting the item at the specified index
             MyNode<T> nodeToInsert = new MyNode<>(item);
             MyNode<T> currentNode = head;
             for (int i = 0; i < index; i++) {
@@ -45,6 +50,7 @@ public class MyLinkedList<T> implements MyList<T> {
         }
     }
 
+    // Method to add an item at the beginning of the linked list
     @Override
     public void addFirst(T item) {
         MyNode<T> node = new MyNode<T>(item);
@@ -60,6 +66,7 @@ public class MyLinkedList<T> implements MyList<T> {
         size++;
     }
 
+    // Method to add an item at the end of the linked list
     @Override
     public void addLast(T item) {
         if (head == null) {
@@ -73,28 +80,32 @@ public class MyLinkedList<T> implements MyList<T> {
         }
     }
 
+    // Method to get the item at a specific index in the linked list
     @Override
     public T get(int index) {
-        return null;
+        return null; // Not implemented yet
     }
 
+    // Method to get the first item in the linked list
     @Override
     public T getFirst() {
         checkIndex(0);
         return head.getValue();
     }
 
+    // Method to get the last item in the linked list
     @Override
     public T getLast() {
-        checkIndex(size-1);
+        checkIndex(size - 1);
         return tail.getValue();
     }
 
+    // Method to remove an item at a specific index in the linked list
     @Override
     public void remove(int index) {
         checkIndex(index);
         MyNode<T> node = head;
-        for(int i=0;i<index;i++){
+        for (int i = 0; i < index; i++) {
             node = node.getNext();
         }
         MyNode<T> prevNode = node.getPrev();
@@ -106,6 +117,7 @@ public class MyLinkedList<T> implements MyList<T> {
         size--;
     }
 
+    // Method to remove the first item in the linked list
     @Override
     public void removeFirst() {
         checkIndex(0);
@@ -114,30 +126,33 @@ public class MyLinkedList<T> implements MyList<T> {
         size--;
     }
 
+    // Method to remove the last item in the linked list
     @Override
     public void removeLast() {
-        checkIndex(size-1);
+        checkIndex(size - 1);
         MyNode<T> prevNode = tail.getPrev();
         tail.setPrev(null);
-        if(prevNode != null) {
+        if (prevNode != null) {
             prevNode.setNext(null);
-        } else{
+        } else {
             head = null;
         }
         tail = prevNode;
         size--;
     }
 
+    // Method to sort the linked list (not implemented)
     @Override
     public void sort() {
-//        too hard ☹️
+        // Not implemented yet
     }
 
+    // Method to get the index of the first occurrence of an object in the linked list
     @Override
     public int indexOf(Object object) {
         MyNode<T> node = head;
-        for(int i=0;i<size;i++){
-            if(node.getValue().equals(object)){
+        for (int i = 0; i < size; i++) {
+            if (node.getValue().equals(object)) {
                 return i;
             }
             node = node.getNext();
@@ -145,6 +160,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return -1;
     }
 
+    // Method to get the index of the last occurrence of an object in the linked list
     @Override
     public int lastIndexOf(Object object) {
         MyNode<T> node = tail;
@@ -156,6 +172,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return -1;
     }
 
+    // Method to check if an object exists in the linked list
     @Override
     public boolean exists(Object object) {
         MyNode<T> node = head;
@@ -167,6 +184,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return false;
     }
 
+    // Method to convert the linked list to an array
     @Override
     public Object[] toArray() {
         T[] newArray = (T[]) new Object[size];
@@ -178,6 +196,7 @@ public class MyLinkedList<T> implements MyList<T> {
         return newArray;
     }
 
+    // Method to clear the linked list
     @Override
     public void clear() {
         size = 0;
@@ -185,23 +204,26 @@ public class MyLinkedList<T> implements MyList<T> {
         tail = null;
     }
 
+    // Method to get the size of the linked list
     @Override
     public int size() {
         return size;
     }
 
+    // Method to return an iterator for the linked list (not implemented)
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return null; // Not implemented yet
     }
 
+    // Method to check if the index is valid
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("index out of range");
         }
     }
 
-
+    // Method to print the elements of the linked list
     public void printArr() {
         MyNode<T> node = head;
         while (node != null) {
@@ -211,38 +233,42 @@ public class MyLinkedList<T> implements MyList<T> {
         System.out.println();
     }
 
+    // Inner class representing a node in the linked list
     private class MyNode<T> {
         private MyNode<T> next;
         private MyNode<T> prev;
         private T value;
 
+        // Constructor to create a node with a given value
         public MyNode(T value) {
             this.value = value;
         }
 
+        // Getter and setter methods for the next node
         public void setNext(MyNode<T> next) {
             this.next = next;
-        }
-
-        public void setPrev(MyNode<T> prev) {
-            this.prev = prev;
-        }
-
-        public void setValue(T value) {
-            this.value = value;
         }
 
         public MyNode<T> getNext() {
             return next;
         }
 
+        // Getter and setter methods for the previous node
+        public void setPrev(MyNode<T> prev) {
+            this.prev = prev;
+        }
+
         public MyNode<T> getPrev() {
             return prev;
+        }
+
+        // Getter and setter methods for the value of the node
+        public void setValue(T value) {
+            this.value = value;
         }
 
         public T getValue() {
             return value;
         }
     }
-
 }
