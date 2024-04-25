@@ -1,5 +1,6 @@
 import models.MyArrayList;
 import models.MyLinkedList;
+import models.MyQueue;
 import models.MyStack;
 
 public class Main {
@@ -93,25 +94,52 @@ public class Main {
         // Clearing the MyLinkedList
         mll.clear();
 
-        // Example of working with MyLinkedList
+        // Example of working with MyStack
         System.out.println("Example of work myStack.java: ");
 
-        // Creating an instance of MyLinkedList to store integers
+        // Creating an instance of MyStack to store integers
         MyStack<Integer> ms = new MyStack<>();
 
+        // Adding elements in stack
         ms.push(1);
 
         ms.push(2);
 
         ms.push(3);
 
+        // Checking stack, it is empty?
         System.out.println(ms.empty());
 
+        // Take top element from stack
         System.out.println(ms.pop());
 
+        // Look at top element in stack
         System.out.println(ms.peek());
 
+        // search position of give value;
         System.out.println(ms.search(1));
+
+        // Example of working with MyQueue
+        System.out.println("Example of work myQueue.java: ");
+
+        // Creating an instance of MyQueue to store integers
+        MyQueue<Integer> mq = new MyQueue<>();
+
+        // Adding items in queue
+        mq.offer(1);
+        System.out.println(mq.add(2));
+        mq.offer(3);
+
+        // Removing element
+        System.out.println(mq.remove());
+
+        // Take a look for element in queue
+        System.out.println(mq.element());
+
+        // Removing elements
+        System.out.println(mq.poll());
+        System.out.println(mq.remove());
+        System.out.println(mq.poll());
 
     }
 }

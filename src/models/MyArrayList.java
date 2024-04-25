@@ -2,7 +2,7 @@ package models;
 
 import java.util.Iterator;
 
-public class MyArrayList<T>  implements MyList<T> {
+public class MyArrayList<T> implements MyList<T> {
     // Fields to store the array and its size
     private T[] arr;
     private int size;
@@ -93,7 +93,7 @@ public class MyArrayList<T>  implements MyList<T> {
         if (index == size - 1) {
             removeLast();
         }
-        for (int i = index + 1; i < size; i++) {
+        for (int i = index + 1; i < size+1; i++) {
             arr[i - 1] = arr[i];
         }
         size--;
@@ -109,6 +109,7 @@ public class MyArrayList<T>  implements MyList<T> {
     @Override
     public void removeLast() {
         checkIndex(size - 1);
+        arr[0] = arr[1];
         size--;
     }
 
