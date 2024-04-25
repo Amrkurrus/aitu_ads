@@ -1,5 +1,6 @@
 import models.MyArrayList;
 import models.MyLinkedList;
+import models.MyStack;
 
 public class Main {
     public static void main(String[] args) {
@@ -91,5 +92,26 @@ public class Main {
 
         // Clearing the MyLinkedList
         mll.clear();
+
+        // Example of working with MyLinkedList
+        System.out.println("Example of work myStack.java: ");
+
+        // Creating an instance of MyLinkedList to store integers
+        MyStack<Integer> ms = new MyStack<>();
+
+        ms.push(1);
+
+        ms.push(2);
+
+        ms.push(3);
+
+        System.out.println(ms.empty());
+
+        System.out.println(ms.pop());
+
+        System.out.println(ms.peek());
+
+        System.out.println(ms.search(1));
+
     }
 }

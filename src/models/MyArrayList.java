@@ -2,7 +2,7 @@ package models;
 
 import java.util.Iterator;
 
-public class MyArrayList<T> implements MyList<T> {
+public class MyArrayList<T>  implements MyList<T> {
     // Fields to store the array and its size
     private T[] arr;
     private int size;
