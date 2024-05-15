@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="MyQueue.java.java is 100% done.">
-      <change afterPath="$PROJECT_DIR$/src/models/MyQueue.java" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="MyQueue.java.java is 100% done. All comments is created.">
+      <change afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ADS_assignment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS_assignment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/MyStack.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="assignment-1" />
+        <entry key="$PROJECT_DIR$" value="assignment-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,21 +69,98 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
+    "JUnit.MyQueueTest.executor": "Run",
+    "JUnit.MyQueueTest.testElementAndPeek.executor": "Run",
+    "JUnit.MyStackTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "assignment-2",
+    "git-widget-placeholder": "assignment-3",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Amir/OneDrive/Рабочий стол/junit-4.12.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ADS_assignment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.testElementAndPeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyQueueTest" />
+      <option name="METHOD_NAME" value="testElementAndPeek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyStackTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MyStackTest" />
+        <item itemvalue="JUnit.MyQueueTest" />
+        <item itemvalue="JUnit.MyQueueTest.testElementAndPeek" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,7 +181,12 @@
       <workItem from="1713445816575" duration="759000" />
       <workItem from="1713454702033" duration="1699000" />
       <workItem from="1713456509610" duration="10517000" />
-      <workItem from="1714062962540" duration="6242000" />
+      <workItem from="1714062962540" duration="6444000" />
+      <workItem from="1714101115673" duration="2182000" />
+      <workItem from="1714106901252" duration="178000" />
+      <workItem from="1714829011614" duration="338000" />
+      <workItem from="1714841055260" duration="190000" />
+      <workItem from="1715663655081" duration="1551000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -270,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714065729580</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="MyQueue.java.java is 100% done. All comments is created.">
+      <option name="closed" value="true" />
+      <created>1714069398920</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714069398920</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +375,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="assignment-3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -309,7 +415,8 @@
     <MESSAGE value="MyLinkedList 'set' method complete, comments added." />
     <MESSAGE value="MyStack.java is 100% done." />
     <MESSAGE value="MyQueue.java.java is 100% done." />
-    <option name="LAST_COMMIT_MESSAGE" value="MyQueue.java.java is 100% done." />
+    <MESSAGE value="MyQueue.java.java is 100% done. All comments is created." />
+    <option name="LAST_COMMIT_MESSAGE" value="MyQueue.java.java is 100% done. All comments is created." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
