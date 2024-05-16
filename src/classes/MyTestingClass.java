@@ -9,7 +9,7 @@ public class MyTestingClass {
 
     @Override
     public int hashCode(){
-        int hash = Math.abs(value * (int)Math.pow(value, Math.exp(value)));
+        int hash = Math.abs(value * (int)Math.pow(value, Math.exp(value))); // "value *" is important idk why...
         return hash;
     }
 

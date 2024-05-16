@@ -57,32 +57,46 @@ public class MyHashTable<K, V> {
         return hash;
     }
 
-    public void put(K key, V value) {
+    public void put(K key, V value) { // To put new element
         HashNode<K, V> node = new HashNode<>(key, value);
         int bucket = hash(key);
-        chainArray[bucket] = node;
-
+        if (chainArray[bucket] == null) {
+            chainArray[bucket] = node;
+        } else {
+            node.setNext(chainArray[bucket]);
+            chainArray[bucket] = node;
+        }
     }
 
-    public V get(K key) {
+    public V get(K key) { //to get Value
         int bucket = hash(key);
-        return chainArray[bucket].getValue();
+        HashNode<K, V> head = chainArray[bucket];
+        while (head != null) {
+            if (head.getKey() == key) {
+                return head.getValue();
+            }
+            head = head.getNext();
+        }
+        return null;
     }
 
-    public V remove(K key) {
+    public V remove(K key) { // to delete element in table
         int bucket = hash(key);
         V value = chainArray[bucket].getValue();
         chainArray[bucket] = null;
         return value;
     }
 
-    public void print() {
+    public void print() { //to print all elements in table
         for (int i = 0; i < chainArray.length; i++) {
             HashNode<K, V> head = chainArray[i];
-            while(head != null) {
-                System.out.println(head.getKey() + " " + head.getValue());
+            int c = 0;
+            while (head != null) {
+                System.out.println(head.getKey() + "   " + head.getValue());
                 head = head.getNext();
+                c++;
             }
+            System.out.println("Bucket: " + i + "  size: " + c);
         }
     }
 }
