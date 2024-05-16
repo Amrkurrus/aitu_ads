@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="MyQueue.java.java is 100% done. All comments is created.">
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="hardworking process...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/MyTestingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/MyTestingClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +183,7 @@
       <workItem from="1714829011614" duration="338000" />
       <workItem from="1714841055260" duration="190000" />
       <workItem from="1715663655081" duration="1551000" />
-      <workItem from="1715873605139" duration="3354000" />
+      <workItem from="1715873605139" duration="7781000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -357,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714069398920</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="hardworking process...">
+      <option name="closed" value="true" />
+      <created>1715878479634</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715878479634</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +421,8 @@
     <MESSAGE value="MyStack.java is 100% done." />
     <MESSAGE value="MyQueue.java.java is 100% done." />
     <MESSAGE value="MyQueue.java.java is 100% done. All comments is created." />
-    <option name="LAST_COMMIT_MESSAGE" value="MyQueue.java.java is 100% done. All comments is created." />
+    <MESSAGE value="hardworking process..." />
+    <option name="LAST_COMMIT_MESSAGE" value="hardworking process..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -418,6 +431,11 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

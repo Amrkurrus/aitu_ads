@@ -75,4 +75,14 @@ public class MyHashTable<K, V> {
         chainArray[bucket] = null;
         return value;
     }
+
+    public void print() {
+        for (int i = 0; i < chainArray.length; i++) {
+            HashNode<K, V> head = chainArray[i];
+            while(head != null) {
+                System.out.println(head.getKey() + " " + head.getValue());
+                head = head.getNext();
+            }
+        }
+    }
 }
