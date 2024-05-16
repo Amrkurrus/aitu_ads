@@ -65,7 +65,9 @@ public class MyHashTable<K, V> {
         } else {
             node.setNext(chainArray[bucket]);
             chainArray[bucket] = node;
+
         }
+        size++;
     }
 
     public V get(K key) { //to get Value
@@ -77,14 +79,53 @@ public class MyHashTable<K, V> {
             }
             head = head.getNext();
         }
+        System.out.println("No such element, return: ");
         return null;
     }
 
     public V remove(K key) { // to delete element in table
         int bucket = hash(key);
-        V value = chainArray[bucket].getValue();
-        chainArray[bucket] = null;
-        return value;
+        HashNode<K, V> head = chainArray[bucket];
+        while (head.getNext() != null) {
+            if (head.getNext().getKey() == key) {
+                HashNode<K, V> node = head.getNext();
+                head.setNext(node.getNext());
+                V value = node.getValue();
+                node.setNext(null);
+                size--;
+                return value;
+            }
+            head = head.getNext();
+        }
+        System.out.println("There is no such element, return: ");
+        return null;
+    }
+
+    public boolean contains(V value) { // check all elements in table
+        for (int i = 0; i < chainArray.length; i++) {
+            HashNode<K, V> head = chainArray[i];
+            while (head != null) {
+                if (head.getValue() == value){
+                    return true;
+                }
+                head = head.getNext();
+            }
+        }
+        return false;
+    }
+
+    public  K getKey(V value) {
+        for (int i = 0; i < chainArray.length; i++) {
+            HashNode<K, V> head = chainArray[i];
+            while (head != null) {
+                if (head.getValue() == value){
+                    return head.getKey();
+                }
+                head = head.getNext();
+            }
+        }
+        System.out.println("There is no such element, return: ");
+        return null;
     }
 
     public void print() { //to print all elements in table
@@ -98,5 +139,6 @@ public class MyHashTable<K, V> {
             }
             System.out.println("Bucket: " + i + "  size: " + c);
         }
+        System.out.println("Total size: " + size);
     }
 }
