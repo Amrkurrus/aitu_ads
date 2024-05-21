@@ -11,7 +11,7 @@ public class Main {
         table.put(mtc1, p1);
 
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             MyTestingClass mtc = new MyTestingClass((int) (Math.random() * 1000));//is just random number
             Person p = new Person(("name" + i), ((int) (Math.random() * 120)));
             table.put(mtc, p);
@@ -19,13 +19,13 @@ public class Main {
 
         table.print();
 
-        System.out.println(table.get(mtc1));
-        System.out.println(table.getKey(p1));
-        System.out.println(table.remove(mtc1));
-        System.out.println(table.get(mtc2));
-        System.out.println(table.get(mtc1));
-        System.out.println(table.contains(p1));
-
+//        System.out.println(table.get(mtc1));
+//        System.out.println(table.getKey(p1));
+//        System.out.println(table.remove(mtc1));
+//        System.out.println(table.get(mtc2));
+//        System.out.println(table.get(mtc1));
+//        System.out.println(table.contains(p1));
+//
 
     }
 }

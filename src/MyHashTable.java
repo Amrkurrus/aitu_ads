@@ -42,6 +42,7 @@ public class MyHashTable<K, V> {
     private HashNode<K, V>[] chainArray;
     private int M = 11;
     private int size;
+    double loadFactor = 0.75;
 
     public MyHashTable() {
         chainArray = new HashNode[M];
@@ -68,6 +69,30 @@ public class MyHashTable<K, V> {
 
         }
         size++;
+        if ((double) size / (double) chainArray.length > loadFactor) {
+            doubleSize();
+        }
+
+    }
+
+    public void doubleSize() {
+        M *= 2;
+        HashNode[] chainArray2 = new HashNode[M];
+        for (int i = 0; i < chainArray.length; i++) {
+            HashNode<K, V> head = chainArray[i];
+            while (head != null) {
+                HashNode<K, V> node = new HashNode<>(head.getKey(), head.getValue());
+                int hash = hash(head.getKey());
+                if (chainArray2[hash] == null) {
+                    chainArray2[hash] = head;
+                } else {
+                    node.setNext(chainArray2[hash]);
+                    chainArray2[hash] = node;
+                }
+                head = head.getNext();
+            }
+        }
+        chainArray = chainArray2;
     }
 
     public V get(K key) { //to get Value
@@ -105,7 +130,7 @@ public class MyHashTable<K, V> {
         for (int i = 0; i < chainArray.length; i++) {
             HashNode<K, V> head = chainArray[i];
             while (head != null) {
-                if (head.getValue() == value){
+                if (head.getValue() == value) {
                     return true;
                 }
                 head = head.getNext();
@@ -114,11 +139,11 @@ public class MyHashTable<K, V> {
         return false;
     }
 
-    public  K getKey(V value) {
+    public K getKey(V value) {
         for (int i = 0; i < chainArray.length; i++) {
             HashNode<K, V> head = chainArray[i];
             while (head != null) {
-                if (head.getValue() == value){
+                if (head.getValue() == value) {
                     return head.getKey();
                 }
                 head = head.getNext();
@@ -133,12 +158,15 @@ public class MyHashTable<K, V> {
             HashNode<K, V> head = chainArray[i];
             int c = 0;
             while (head != null) {
-                System.out.println(head.getKey() + "   " + head.getValue());
+//                System.out.println(head.getKey() + "   " + head.getValue());
                 head = head.getNext();
                 c++;
             }
-            System.out.println("Bucket: " + i + "  size: " + c);
+            if (c != 0) {
+                System.out.println("Bucket: " + i + "  size: " + c);
+            }
         }
-        System.out.println("Total size: " + size);
+
+        System.out.println("Total size: " + (size - 1));
     }
 }
