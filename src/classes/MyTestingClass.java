@@ -1,6 +1,6 @@
 package classes;
 
-public class MyTestingClass {
+public class MyTestingClass implements Comparable<MyTestingClass> {
     private int value;
 
     public MyTestingClass(int value) {
@@ -14,8 +14,19 @@ public class MyTestingClass {
         return hash;
     }
 
+    public int getValue() {
+        return value;
+    }
+
     @Override
     public String toString() {
         return String.valueOf(value);
+    }
+
+
+    @Override
+    public int compareTo(MyTestingClass o) {
+        return Integer.compare(this.value, o.value);
+
     }
 }

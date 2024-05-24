@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="double size and load factor is work correctly">
-      <change afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="almost almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/MyTestingClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/MyTestingClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,30 +62,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyQueueTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyQueueTest.testElementAndPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyStackTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;assignment-3&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amir/OneDrive/Рабочий стол/junit-4.12.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.MyQueueTest.executor": "Run",
+    "JUnit.MyQueueTest.testElementAndPeek.executor": "Run",
+    "JUnit.MyStackTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "assignment-3",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Amir/OneDrive/Рабочий стол/junit-4.12.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="classes" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -186,7 +190,10 @@
       <workItem from="1715873605139" duration="11071000" />
       <workItem from="1715914776920" duration="5629000" />
       <workItem from="1716220749570" duration="552000" />
-      <workItem from="1716260436228" duration="5722000" />
+      <workItem from="1716260436228" duration="6516000" />
+      <workItem from="1716267216646" duration="1230000" />
+      <workItem from="1716519024855" duration="577000" />
+      <workItem from="1716519623577" duration="1574000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -380,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715881441806</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="bst done (almost)">
+      <option name="closed" value="true" />
+      <created>1716266778509</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716266778509</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,8 +425,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Problem selector was added; problem 1 was solved." />
-    <MESSAGE value="Gitignore update,&#10;problem 1 bugfix,&#10;problem 2 solved." />
     <MESSAGE value="problem 3 solved." />
     <MESSAGE value="problem 3 solved, if conditions in problem 1 and 2 is shorter." />
     <MESSAGE value="Problem selector text cleaned, problem 4 solved." />
@@ -434,7 +447,10 @@
     <MESSAGE value="MyQueue.java.java is 100% done. All comments is created." />
     <MESSAGE value="hardworking process..." />
     <MESSAGE value="ok it is starting to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok it is starting to work" />
+    <MESSAGE value="double size and load factor is work correctly" />
+    <MESSAGE value="bst done (almost)" />
+    <MESSAGE value="almost almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost almost done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,6 +459,11 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BST.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

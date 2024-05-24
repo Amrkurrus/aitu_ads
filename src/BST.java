@@ -5,6 +5,7 @@ import java.util.List;
 public class BST<K extends Comparable<K>, V> {
     private bstNode root;
     private int size;
+
     private class bstNode<K, V> {
         private K key;
         private V val;
@@ -52,32 +53,34 @@ public class BST<K extends Comparable<K>, V> {
         bstNode<K, V> node = new bstNode(key, val);
         if (root == null) {
             root = node;
-        }
-        bstNode<K, V> head = root;
-        while (true) {
-            int cmp = head.getKey().compareTo(node.getKey());
-            if (cmp == 0) {
-                node.setLeft(head.getLeft());
-                node.setRight(head.getRight());
-                head.setLeft(null);
-                head.setRight(null);
-            }
-            if (cmp > 0) {
-                if (head.getLeft() != null) {
-                    head = head.getLeft();
-                } else {
-                    head.setLeft(node);
-                    size++;
-                    break;
+            size++;
+        } else {
+            bstNode<K, V> head = root;
+            while (true) {
+                int cmp = head.getKey().compareTo(node.getKey());
+                if (cmp == 0) {
+                    node.setLeft(head.getLeft());
+                    node.setRight(head.getRight());
+                    head.setLeft(null);
+                    head.setRight(null);
                 }
-            }
-            if (cmp < 0) {
-                if (head.getRight() != null) {
-                    head = head.getRight();
-                } else {
-                    head.setRight(node);
-                    size++;
-                    break;
+                if (cmp > 0) {
+                    if (head.getLeft() != null) {
+                        head = head.getLeft();
+                    } else {
+                        head.setLeft(node);
+                        size++;
+                        break;
+                    }
+                }
+                if (cmp < 0) {
+                    if (head.getRight() != null) {
+                        head = head.getRight();
+                    } else {
+                        head.setRight(node);
+                        size++;
+                        break;
+                    }
                 }
             }
         }
@@ -104,13 +107,13 @@ public class BST<K extends Comparable<K>, V> {
 
     public void delete(K key) {
         bstNode<K, V> node = getNode(key);
-        if(node.getLeft() == null && node.getRight() == null){
+        if (node.getLeft() == null && node.getRight() == null) {
             node = null;
         }
-        if (node.getLeft() != null && node.getRight() == null){
+        if (node.getLeft() != null && node.getRight() == null) {
             node = node.getLeft();
         }
-        if (node.getLeft() == null && node.getRight() != null){
+        if (node.getLeft() == null && node.getRight() != null) {
             node = node.getRight();
         }
         if (node.getLeft() != null && node.getRight() != null) {
@@ -121,9 +124,15 @@ public class BST<K extends Comparable<K>, V> {
 
     public Iterable<K> iterator() {
         List<K> keys = new ArrayList<>();
-        iterator_f
+        iterator_f(root, keys);
+        return keys;
+    }
 
-        return null;
+    public void iterator_f(bstNode<K, V> node, List<K> keys) {
+        if (node == null) return;
+        iterator_f(node.getLeft(), keys);
+        keys.add(node.getKey());
+        iterator_f(node.getRight(), keys);
     }
 
     public bstNode<K, V> getNode(K key) {
@@ -156,6 +165,10 @@ public class BST<K extends Comparable<K>, V> {
         while (node.getRight() != null) {
             node = node.getRight();
         }
-        return  node;
+        return node;
+    }
+
+    public int getSize() {
+        return size;
     }
 }
