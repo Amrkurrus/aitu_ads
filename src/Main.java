@@ -32,7 +32,7 @@ public class Main {
         BST<MyTestingClass, Person> tree = new BST<>();
         tree.put(mtc1, p1);
         System.out.println(tree.getSize());
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             MyTestingClass mtc3 = new MyTestingClass((int) (Math.random() * 1000));//is just random number
             Person p3 = new Person(("name" + i), ((int) (Math.random() * 120)));
             tree.put(mtc3, p3);
@@ -40,9 +40,9 @@ public class Main {
         }
         tree.put(mtc2, p2);
         System.out.println(tree.getSize());
-        Iterable<MyTestingClass> keys = tree.iterator();
-        for (MyTestingClass k : keys) {
-            System.out.println(k);
-        }
+//        Iterable<MyTestingClass> keys = tree.iterator();
+//        for (MyTestingClass k : keys) {
+//            System.out.println(k);
+//        }
     }
 }

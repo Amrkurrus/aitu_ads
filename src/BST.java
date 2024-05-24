@@ -61,8 +61,7 @@ public class BST<K extends Comparable<K>, V> {
                 if (cmp == 0) {
                     node.setLeft(head.getLeft());
                     node.setRight(head.getRight());
-                    head.setLeft(null);
-                    head.setRight(null);
+                    break;
                 }
                 if (cmp > 0) {
                     if (head.getLeft() != null) {
