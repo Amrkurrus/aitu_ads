@@ -40,9 +40,9 @@ public class Main {
         }
         tree.put(mtc2, p2);
         System.out.println(tree.getSize());
-//        Iterable<MyTestingClass> keys = tree.iterator();
-//        for (MyTestingClass k : keys) {
-//            System.out.println(k);
-//        }
+        MyHashTable<MyTestingClass, Person> keys = tree.iterator();
+        keys.printFull();
+
+        System.out.println(tree.get(mtc1));
     }
 }
