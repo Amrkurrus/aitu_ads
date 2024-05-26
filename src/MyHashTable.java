@@ -169,4 +169,21 @@ public class MyHashTable<K, V> {
 
         System.out.println("Total size: " + (size - 1));
     }
+
+    public void printFull() { //to print all elements in table
+        for (int i = 0; i < chainArray.length; i++) {
+            HashNode<K, V> head = chainArray[i];
+            int c = 0;
+            while (head != null) {
+                System.out.println(head.getKey() + "   " + head.getValue());
+                head = head.getNext();
+                c++;
+            }
+            if (c != 0) {
+                System.out.println("Bucket: " + i + "  size: " + c);
+            }
+        }
+
+        System.out.println("Total size: " + (size - 1));
+    }
 }

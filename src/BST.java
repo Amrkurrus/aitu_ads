@@ -121,17 +121,17 @@ public class BST<K extends Comparable<K>, V> {
         size--;
     }
 
-    public Iterable<K> iterator() {
-        List<K> keys = new ArrayList<>();
-        iterator_f(root, keys);
-        return keys;
+    public MyHashTable<K, V> iterator() {
+        MyHashTable<K, V> set = new MyHashTable<>();
+        iterator_f(root, set);
+        return set;
     }
 
-    public void iterator_f(bstNode<K, V> node, List<K> keys) {
+    public void iterator_f(bstNode<K, V> node, MyHashTable<K, V> set) {
         if (node == null) return;
-        iterator_f(node.getLeft(), keys);
-        keys.add(node.getKey());
-        iterator_f(node.getRight(), keys);
+        iterator_f(node.getLeft(), set);
+        set.put(node.getKey(), node.getValue());
+        iterator_f(node.getRight(), set);
     }
 
     public bstNode<K, V> getNode(K key) {
