@@ -5,7 +5,8 @@ import java.util.Map;
 public class WeightedGraph<V> {
     private Map<V, Vertex<V>> vertexs;
 
-    public WeightedGraph() {
+    public WeightedGraph(boolean idk) {
+        // I don't know why we need this boolean
         this.vertexs = new Hashtable<>();
     }
 
@@ -26,10 +27,16 @@ public class WeightedGraph<V> {
     }
 
     private boolean existVertex(V data) {
-        if (vertexs.containsKey(data)) {
-            return true;
-        } else {
-            return false;
+        return vertexs.containsKey(data);
+    }
+
+    public void addEdge(V from, V to, double weight) {
+        if (existVertex(from) && existVertex(to)){
+            Vertex<V> vFrom = vertexs.get(from);
+            Vertex<V> vTo = vertexs.get(to);
+            vFrom.addAdjacentVertex(vTo, weight);
+            vTo.addAdjacentVertex(vFrom, weight);
         }
     }
+
 }
