@@ -1,3 +1,5 @@
+import classes.BST;
+import classes.MyHashTable;
 import classes.MyTestingClass;
 import classes.Person;
 
@@ -28,7 +30,7 @@ public class Main {
 //        System.out.println(table.get(mtc1));
 //        System.out.println(table.contains(p1));
 //
-        System.out.println("My BST implementation");
+        System.out.println("My classes.BST implementation");
         BST<MyTestingClass, Person> tree = new BST<>();
         tree.put(mtc1, p1);
         System.out.println(tree.getSize());
