@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="WeightedGraph.java modification">
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)">
+      <change afterPath="$PROJECT_DIR$/src/MyGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
@@ -196,7 +197,8 @@
       <workItem from="1716519623577" duration="4747000" />
       <workItem from="1717006552062" duration="158000" />
       <workItem from="1717083689964" duration="967000" />
-      <workItem from="1717084669557" duration="3503000" />
+      <workItem from="1717084669557" duration="3934000" />
+      <workItem from="1717088661619" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -454,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717086727226</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)">
+      <option name="closed" value="true" />
+      <created>1717088270771</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717088270771</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="problem 9 solved." />
     <MESSAGE value="problem 10 solved,&#10;comments added." />
     <MESSAGE value="Delete unimportant comments" />
     <MESSAGE value="problem 3 bugfix." />
@@ -509,7 +518,8 @@
     <MESSAGE value="Edge and Vertex was added" />
     <MESSAGE value="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge" />
     <MESSAGE value="WeightedGraph.java modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="WeightedGraph.java modification" />
+    <MESSAGE value="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
