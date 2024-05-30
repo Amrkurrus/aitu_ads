@@ -7,7 +7,7 @@ public class MyGraph<V> {
 
     public MyGraph() {
         // I don't know why we need this boolean
-        this.vertexs = new Hashtable<>();
+        this.vertexs = new HashMap<>();
     }
 
     public void addVertex(V data) {
@@ -31,12 +31,18 @@ public class MyGraph<V> {
     }
 
     public void addEdge(V from, V to) {
-        if (existVertex(from) && existVertex(to)){
-            Vertex<V> vFrom = vertexs.get(from);
-            Vertex<V> vTo = vertexs.get(to);
-            vFrom.addAdjacentVertex(vTo, 0);
-            vTo.addAdjacentVertex(vFrom,0);
+        if (!existVertex(from)) {
+            addVertex(from);
         }
-    }
+        if (!existVertex(to)) {
+            addVertex(to);
+        }
+        Vertex<V> vFrom = vertexs.get(from);
+        Vertex<V> vTo = vertexs.get(to);
 
+        vFrom.addAdjacentVertex(vTo, 0);
+        vTo.addAdjacentVertex(vFrom, 0);
+    }
 }
+
+

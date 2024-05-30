@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)">
-      <change afterPath="$PROJECT_DIR$/src/MyGraph.java" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="implementing myGraph class as like parent class of WeightedGraph.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,30 +63,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyQueueTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyQueueTest.testElementAndPeek.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MyStackTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;assignment-4&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amir/OneDrive/Рабочий стол/junit-4.12.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.MyQueueTest.executor": "Run",
+    "JUnit.MyQueueTest.testElementAndPeek.executor": "Run",
+    "JUnit.MyStackTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "assignment-4",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Amir/OneDrive/Рабочий стол/junit-4.12.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="classes" />
@@ -198,7 +198,8 @@
       <workItem from="1717006552062" duration="158000" />
       <workItem from="1717083689964" duration="967000" />
       <workItem from="1717084669557" duration="3934000" />
-      <workItem from="1717088661619" duration="313000" />
+      <workItem from="1717088661619" duration="710000" />
+      <workItem from="1717089382396" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -464,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717088270771</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="implementing myGraph class as like parent class of WeightedGraph.java">
+      <option name="closed" value="true" />
+      <created>1717089201221</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717089201221</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +503,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="problem 10 solved,&#10;comments added." />
     <MESSAGE value="Delete unimportant comments" />
     <MESSAGE value="problem 3 bugfix." />
     <MESSAGE value="Time update." />
@@ -519,7 +527,8 @@
     <MESSAGE value="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge" />
     <MESSAGE value="WeightedGraph.java modification" />
     <MESSAGE value="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplified if else in WeightedGraph.java 28 line.&#10;addEdge implementation in WeightedGraph.java without edge class.(tricky)" />
+    <MESSAGE value="implementing myGraph class as like parent class of WeightedGraph.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing myGraph class as like parent class of WeightedGraph.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,6 +536,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="8" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

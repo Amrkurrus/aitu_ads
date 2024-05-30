@@ -7,8 +7,9 @@ public class Main {
     public static void main(String[] args) {
         WeightedGraph<String> weightedGraph = new WeightedGraph<>(true);
         fillWithWeights(weightedGraph);
-//
-//        System.out.println("Dijkstra:");
+
+        System.out.println("Dijkstra:");
+        System.out.println(weightedGraph.existVertex("Almaty"));
 //        Search<String> djk = new DijkstraSearch<>(weightedGraph, "Almaty");
 //        outputPath(djk, "Kyzylorda");
 //
@@ -48,7 +49,7 @@ public class Main {
         graph.addEdge("Astana", "Kostanay", 3.5);
         graph.addEdge("Shymkent", "Kyzylorda", 5.4);
     }
-//
+
 //    public static void outputPath(Search<String> search, String key) {
 //        for (String v : search.pathTo(key)) {
 //            System.out.print(v + " -> ");
