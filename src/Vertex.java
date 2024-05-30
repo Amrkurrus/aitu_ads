@@ -11,4 +11,21 @@ public class Vertex<V> {
     public void addAdjacentVertex(Vertex<V> destination, double weight) {
         adjacentVertices.put(destination, weight);
     }
+
+    public void removeAdjVertex(Vertex<V> destination){
+        adjacentVertices.remove(destination);
+    }
+
+    public V getData() {
+        return data;
+    }
+
+    public Map<Vertex<V>, Double> getAdjacentVertices() {
+        return adjacentVertices;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

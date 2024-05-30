@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="Edge and Vertex was added">
-      <change afterPath="$PROJECT_DIR$/src/BreadFirstSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/DijkstraSearch.java" afterDir="false" />
+    <list default="true" id="88d5c8ec-10b3-4847-afd2-61d8b605b8c0" name="Changes" comment="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,7 @@
       <workItem from="1716519623577" duration="4747000" />
       <workItem from="1717006552062" duration="158000" />
       <workItem from="1717083689964" duration="967000" />
-      <workItem from="1717084669557" duration="368000" />
+      <workItem from="1717084669557" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="Problem selector was added; problem 1 was solved.">
       <option name="closed" value="true" />
@@ -434,7 +431,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717084386432</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge">
+      <option name="closed" value="true" />
+      <created>1717085277655</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1717085277657</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge">
+      <option name="closed" value="true" />
+      <created>1717085286407</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717085286407</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Problem 7 solved, problem 6: removed redundant variable." />
     <MESSAGE value="problem 8 solved." />
     <MESSAGE value="problem 9 solved." />
     <MESSAGE value="problem 10 solved,&#10;comments added." />
@@ -489,7 +501,8 @@
     <MESSAGE value="final1" />
     <MESSAGE value="ass4" />
     <MESSAGE value="Edge and Vertex was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edge and Vertex was added" />
+    <MESSAGE value="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Provide your own implementation for classes:  Vertex, WeightedGraph, Search, BreadthFirstSearch, DijkstraSearch and Main (with example usage) &#10;Deleting class Edge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
